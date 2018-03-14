@@ -11,13 +11,16 @@ include/
 )
 
 set(HEADERS
-include/overseer/Overseer.hpp
+include/overseer/File.hpp
+include/overseer/Hashtable.hpp
+include/overseer/Manager.hpp
 )
 
 set(SOURCES
 ${SOURCES}
 src/main.cpp
-src/Overseer.cpp
+src/Manager.cpp
+src/Hashtable.cpp
 )
 
 source_group("Header files" FILES ${HEADERS})
