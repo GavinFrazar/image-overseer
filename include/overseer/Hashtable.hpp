@@ -17,8 +17,10 @@ namespace overseer
         Hashtable(std::size_t size);
 
         //methods
-        const std::map<std::string, File>& insert(const File& item);
+        void insert(const File& item);
         void remove(const File& item);
+        bool contains(const File& item);
+        const std::map<ull, std::map<std::string, File>> getDups();
         
     private:
         //fields
