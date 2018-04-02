@@ -46,7 +46,7 @@ int main()
             cv::Mat image = cv::imread(file_path, CV_LOAD_IMAGE_UNCHANGED); // Read the file
             if (!image.empty())
             {
-                if (file_name == "1484135843969.jpg")
+                if (file_name == "testcopy.jpg")
                     std::cout << 'a';
                 resize(image, image, cv::Size(DIM, DIM), 0, 0, CV_INTER_AREA);
                 cv::namedWindow(file_name, cv::WINDOW_AUTOSIZE);// Create a window for display.
@@ -65,7 +65,7 @@ uint64 identify(std::string filename)
     cv::Mat image;
     image = cv::imread(filename, CV_LOAD_IMAGE_GRAYSCALE); // Read the file
     if (image.empty())
-        return 0;
+        return 7000;
     resize(image, image, cv::Size(8, 8), 0, 0, CV_INTER_AREA);
     int nRows = 8;
     int nCols = 8;
